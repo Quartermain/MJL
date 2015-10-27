@@ -1,0 +1,35 @@
+.header {
+  background: $c-base;
+}
+
+.block-header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 3;
+	.header {
+		padding-left: percentage(50/1590);
+		padding-right: percentage(50/1590);
+		@include clearfix;
+		.left-header {
+			width: percentage(1310/1590);
+			float: left;
+		}
+		.right-header {
+			width: percentage(280/1590);
+			float: right;
+		}
+	}
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  
+
+}

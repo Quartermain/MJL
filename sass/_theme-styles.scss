@@ -1,0 +1,27 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+	@include media($bs-xxlg...) {
+		max-width: $xxlg;
+	}
+	@include media($bs-lg...) {
+		max-width: $lg;
+	}
+	@include media($bs-md...) {
+		max-width: $md;
+	}
+	@include media($bs-sm...) {
+		max-width: $sm;
+	}
+	@include media($bs-xs...) {
+		max-width: $xs;
+	}
+}
+
+.wrapper {
+	margin: 0 auto;
+}

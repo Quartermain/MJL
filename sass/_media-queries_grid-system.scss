@@ -1,0 +1,70 @@
+
+/* #Variable Definitions
+================================================== */
+
+  /* Fluid Grid
+    $grid-width: 100%;
+    $totals-columns: 12;
+    $margin: 1%;
+  */
+
+/* Mixin Media Queries
+================================================== */
+
+/*  @mixin wide-screen {
+    @media only screen and (min-width: $wide-screen-width) { @content; }
+  }
+  @mixin desktop {
+    @media only screen and (min-width: $base-width) and (max-width: $wide-screen-widt - 1) { @content; }
+  }*/
+  // @mixin desktop {
+  //   @media only screen and (min-width: $base-width) { @content; }
+  // }
+  // @mixin tablet {
+  //   @media only screen and (max-width: $base-width - 1) { @content; }
+  // }
+  // 
+  // 
+
+   @mixin tablet-landscape {
+    @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-md-max) { @content; }
+  }
+
+    @mixin tablet-portrait {
+    @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { @content; }
+  }
+
+  @mixin mobi-landscape {
+    @media only screen and (max-width: $screen-xs-max) { @content; }
+  }
+  // @mixin mobi-portrait {
+  //   @media only screen and (max-width: $mobile-landscape-width - 1) { @content; }
+  // }
+
+/* #Clearing
+================================================== */
+/* Include clearfix on parent to clear nested columns,
+or wrap each row of columns in a @include row */
+@mixin clearfix {
+  zoom: 1;
+  &:after { clear: both; }
+  &:before, &:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;}
+}
+/* You can also use a @include clear to clear columns */
+@mixin clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* Mixin container width
+================================================== */
