@@ -245,13 +245,19 @@
 
 .form-homepage {
 	padding: 0 30px;
+	padding-bottom: 20px;
 	background: $gray-lightest;
-	bottom: -80px;
-	position: relative;
-	z-index: 2;
+
+	&.after-parellex {
+		position: relative;
+		bottom: -80px;
+		z-index: 2;
+	}
 
 	.btn-submit {
 		float: right;
+		border: 1px solid $gray4;
+		color: $gray-light
 	}
 	.about-us {
 		padding-right: 20px;
@@ -260,6 +266,10 @@
 		padding-left: 20px;
 		padding-bottom: 20px;
 	}
+}
+
+.btn-submit {
+	float: right;
 }
 
 // Parallax

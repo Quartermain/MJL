@@ -8,14 +8,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Home page</title>
+<title>Contact us</title>
 <link href="css/style.css" rel="stylesheet" />
 <link href="css/slideshow.css" rel="stylesheet" />
 <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="wrapper">
+	<div class="wrapper about-us-page">
 		<div class="block-header">
 			<div class="container">
 				<div class="header clearfix">
@@ -117,69 +117,72 @@
 			</div>
 			
 			<div class="container">
-				<div class="form-homepage after-parellex">
-					<div class="grid-multi ">
-						<div class="grid-xs-6">
-							<div class="about-us">
-								<h2 class="title-txt">about us</h2>
-								<p>
-									We have been invovled in the locksmith industry for over 30 years, with our main focus centred on the Commercial environment. Our initial business model started from humble beginnings from a residential property working out of a purpose built workshop. As time progressed we sought out Retail premises and made the decision to expand and employ more staff as the business grew and our Client base expanded considerably.<br><br>
-								
-								During this period, and again in the present business, we remain entirely Customer focused. We have discovered that if we are able to service our Clients, provide quality workmanship and expertly trained Technicians our Clients continue to request our services.<br><br>
-								
-								Our industry is a Service based industry and as such our Customer's feedback and referrals are the building blocks for our continued growth and success.<br><br>
-								<a href="#" class="btn btn-outline">Read More</a>
-								</p>
-							</div>
-
+				<div class="title-page">
+					<div class="txt">
+						Service areas
+					</div>
+					<hr>
+				</div>
+				<div class="grid-multi">
+						<div class="grid-sm-4">
+							<div class="txt-year">MJL provides security installations across Australia.</div>
 						</div>
-						<div class="grid-xs-6">
-							<div class="form-contact">
-								<h2 class="title-txt">ENQUIRE</h2>
-								<div class="clearfix">
-									<input type="text" class="form-input" placeholder="Name">
-									<input type="text" class="form-input" placeholder="Email">
-									<input type="text" class="form-input" placeholder="Phone">
-									<select class="select-form">
-										<option select>Service</option>
-										<option >ENQUIRE</option>
-										<option >Service</option>
-										<option >Service</option>
-									</select>
-									<textarea rows="5" class="form-input" placeholder="Enquire"></textarea>
-									<a href="#" class="btn btn-outline btn-submit">SUBMIT</a>
-								</div>
-							</div>
-
+						<div class="grid-sm-4">
+							<p>Our Service Technicians have been operating within the Security Industry / Commercial Locksmithing industry for over 30 years and are specifically trained, qualified and accredited to perform their trade within the Commercial Building sector including High Security Assets such as Defence, Customs and associated Buildings / Sites.<br><br>
+							<a href="#" class="btn btn-outline">enquire now</a>
+							</p>
+						</div>
+						<div class="grid-sm-4">
+							<img alt="images" src="images/img-map.jpg" class="respon-img">
+						</div>
+					</div>
+			</div>
+			<div class="bg-white">
+				<div class="contact-map">
+					<div class="container">
+						<h2 class="title-txt">Office Location<span>123 King Str Sydney NSW.</span></h2>
+						<div id="map" style="width: 100%; height: 600px;">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="parallax-content">
-				<img data-parallax='{"y": 200}' src="images/parallax.jpg"/></img>
-			</div>
-			<div class="bg-lighter">
+
+			<div class="bg-gray-blue">
 				<div class="container">
-					<div class="txt-header">
-						why choose us
+					<div class="title-page">
+						<div class="txt">
+							make an ENQUIRy
+						</div>
+						<hr>
 					</div>
 					<div class="grid-multi">
-						<div class="grid-sm-4">
-							<div class="txt-year">Over 30 years
-	locksmith industry experience.</div>
+						<div class="grid-sm-6">
+							
+							<div class="clearfix">
+								<input type="text" placeholder="Name" class="form-input">
+								<input type="text" placeholder="Email" class="form-input">
+								<input type="text" placeholder="Phone" class="form-input">
+								<select class="select-form">
+									<option select="">Service</option>
+									<option>ENQUIRE</option>
+									<option>Service</option>
+									<option>Service</option>
+								</select>
+								
+							</div>
 						</div>
-						<div class="grid-sm-4">
-							<p>During this period, and again in the present business, we remain entirely Customer focused. We have discovered that if we are able to service our Clients, provide quality workmanship and expertly trained Technicians our Clients continue to request our services.<br><br>
-	 
-	Our industry is a Service based industry and as such our Customer's feedback.<br><br>
-	<a class="btn btn-outline" href="#">Read More</a>
-	</p>
-						</div>
-						<div class="grid-sm-4">
-							<img class="respon-img" src="images/image1.jpg" alt="images">
+						<div class="grid-sm-6">
+							<textarea placeholder="Enquire" class="form-input" rows="5"></textarea>
+						<a class="btn btn-outline btn-submit" href="#">SUBMIT</a>
 						</div>
 					</div>
+
 				</div>
+			</div>
+			
+
+			<div class="parallax-content">
+				<img data-parallax='{"y": 50}' src="images/parallax.jpg"/></img>
 			</div>
 
 			<!-- Footer -->
@@ -242,5 +245,6 @@
 <script src="js/jquery.parallax-scroll.js"></script>
 <script src="js/main.js"></script>
 <script src="js/snazzymaps.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 </body>
 </html>

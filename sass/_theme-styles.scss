@@ -58,6 +58,9 @@ p {
 .bg-gray-blue {
 	background: $gray-blue;
 }
+.bg-gray10 {
+	background: $gray10;
+}
 
 .form-input {
 	background: $gray5;
@@ -80,4 +83,46 @@ p {
 	background: $gray5;
 	color: $gray6;
 	border: none;
+}
+
+// Page About us
+
+.pad-block {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.block-director {
+	@extend .pad-block;
+	.title-page {
+		color: $white;
+		hr {
+			background: $white;
+		}
+	}
+	color: $white;
+}
+
+.about-us-page {
+	textarea {
+		height: 212px;
+	}
+	.bg-gray-blue {
+		@extend .pad-block;
+	}
+}
+
+// Map contact
+
+.contact-map {
+	padding-bottom: 30px;
+	.title-txt {
+		padding-top: 30px;
+		> span {
+			font-size: $f-size;
+			text-transform: none;
+			margin-left: 20px;
+			font-weight: $f-normal;
+		}
+	}
 }

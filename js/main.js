@@ -37,13 +37,18 @@ $(window).ready(function(){
 		
 		var length = $(".content-service").text().length;
 		if ( length > 100) {
-			// $(".content-service").split(200);
-			$(this).val("");
+			
+			iTotalWords = $(this).text().split(' ').length;
+			  
 		};
 	};
 
 	splitTextService ()
 	// end
+	// 
+	// 
+	
+	
 });
 
 
