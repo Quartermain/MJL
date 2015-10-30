@@ -1,0 +1,87 @@
+.service-page {
+	.block-our {
+		background: $gray10 url("../images/lock-service.png") no-repeat right center;
+		background-size: auto 100%;
+		.txt-our {
+			font-size: $f-size + 10;
+			color: $white;
+			padding: 40px 0;
+			line-height: 100%;
+		}
+	}
+	.bg-gray-blue {
+		textarea {
+			height: 212px;
+		}
+		.btn-submit {
+			float: right;
+			border: solid 1px $white;
+			color: $white;
+		}
+		padding-bottom: 30px;
+	}
+}
+
+.block-1 {
+	padding: 0 0 30px;
+}
+
+.title-page {
+	padding-top: 30px;
+	> i {
+		font-size: 60px;
+		color: $gray-light;
+		display: inline-block;
+		vertical-align: middle;
+		+ .txt {
+			margin-left: 10px;
+		}
+	}
+	.txt {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: $f-size + 4;
+		text-transform: uppercase;
+		font-weight: $f-bold;
+	}
+	hr {
+		background: $gray9;
+		height: 1px;
+		width: 15%;
+		margin: 20px 0;
+	}
+}
+.container-service {
+	ul {
+		list-style: none;
+		li {
+			list-style: none;
+		}
+	}
+}
+
+.button-read {
+	padding: 20px 0;
+	.btn {
+		margin-right: 20px;
+	}
+}
+
+.block-service1 {
+	background: $white url("../images/bg-service1.png") no-repeat right center;
+	background-size: auto 100%;
+	padding-bottom: 20px;
+	position: relative;
+}
+.block-service2 {
+	background: $gray-lightest url("../images/bg-service2.png") no-repeat right center;
+	background-size: auto 100%;
+	padding-bottom: 20px;
+	position: relative;
+}
+.block-service3 {
+	background: $gray11 url("../images/bg-service3.png") no-repeat right center;
+	background-size: auto 100%;
+	padding-bottom: 20px;
+	position: relative;
+}

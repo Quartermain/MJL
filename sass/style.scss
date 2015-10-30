@@ -8,13 +8,16 @@
 
 // Sprites
 @import "sprites";
+@import "button";
+@import "fonts";
 @import "grid-customer";
 @import "utilities";
 @import "type";
 
 // Style globle
 
-@import "page/_homepage";
+@import "page/homepage";
+@import "page/service";
 @import "theme-styles";
 
 // Block

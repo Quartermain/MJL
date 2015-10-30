@@ -3,21 +3,368 @@
 }
 
 .block-header {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 3;
+	z-index: 5;
 	.header {
 		padding-left: percentage(50/1590);
-		padding-right: percentage(50/1590);
 		@include clearfix;
 		.left-header {
 			width: percentage(1310/1590);
 			float: left;
+			.txt-trust {
+				font-size: $f-size - 2;
+				color: $white;
+				text-transform: uppercase;
+				display: inline-block;
+			}
+			.txt-phone {
+				font-size: $f-size + 10;
+				font-weight: $f-bold;
+				color: $white;
+				display: inline-block;
+				text-align: right;
+				float: right;
+				padding-top: $pd20;
+				margin-right: 10px;
+			}
+			.txt-week {
+				font-size: $f-size;
+				font-weight: $f-bold;
+				color: $yallow;
+				display: inline-block;
+				text-align: right;
+				float: right;
+				padding-top: $pd30;
+			}
 		}
 		.right-header {
 			width: percentage(280/1590);
 			float: right;
+			position: relative;
+		}
+	}
+}
+
+.humberger {
+	color: $white;
+	text-transform: uppercase;
+	font-size: $f-size + 2;
+	text-decoration: none;
+	font-weight: $f-bold;
+	float: right;
+	padding-top: $pd20;
+	margin-left: 20px;
+	margin-right: percentage(37/205);
+	width: 80px;
+	&:hover,
+	&.active {
+		background: $gray-light;
+		padding-right: percentage(37/205);
+		padding-left: 20px;
+		margin: 0;
+		padding-bottom: 15px;
+	}
+	> i {
+		margin-right: 10px;
+		font-size: $f-size + 10;
+	}
+}
+
+
+// Menu header
+// 
+
+
+.menu-drop {
+	position: absolute;
+	right: 0;
+	background: $gray-light;
+	color: $white;
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		> li {
+			list-style: none;
+			padding: 10px 0 10px 20px;
+			border-bottom: solid 1px $drak-gray;
+			position: relative;
+			a {
+				color: $white;
+				text-decoration: none;
+				font-weight: $f-bold;
+			}
+			.menu-child2 {
+				position: absolute;
+				background: $gray-lighter;
+				top: 0;
+				>li {
+					font-weight: $f-normal;
+					border-bottom: solid 1px $gray-lightest;
+					white-space: nowrap;
+					text-align: right;
+					padding-right: 20px;
+					a {
+						color: $gray-light;
+					}
+				}
+				&:after{
+					width: 0; 
+					height: 0; 
+					border-top: 20px solid transparent; 
+					border-left: 20px solid $gray-lighter; 
+					border-bottom: 20px solid transparent;
+					position: absolute;
+					content: "";
+					right: -20px;
+					top: 0;
+				}
+
+			}
+		}
+	}
+
+}
+
+.dis-none {
+	display: none;
+}
+
+
+// Four Block Homepage
+// 
+
+.home-block {
+	background: $white;
+	margin-top: -30px;
+    position: relative;
+    z-index: 4;
+	.block-house {
+		display: table;
+		width: 100%;
+		.block-house1,
+		.block-house2,
+		.block-house3,
+		.block-house4 {
+			display: table-cell;
+			width: 25%;
+			vertical-align: middle;
+			text-align: center;
+		}
+		.block-element {
+			+ .block-element {
+				border-left: solid 1px $drakest-gray;
+			}
+			position: relative;
+			&:after {
+				width: 0; 
+				height: 0;
+				border-left: 20px solid transparent; 
+				border-right: 20px solid transparent; 
+				border-bottom: 20px solid $gray-lightest;
+				position: absolute;
+				content: "";
+				right: -20px;
+				bottom: 0;
+				z-index: 2;
+			}
+			&:last-child {
+				&:after {
+					border-bottom: 0;
+				}
+			}
+		}
+		.house-element {
+			font-size: $f-size + 6;
+			width: 70%;
+			border-bottom: solid 1px $gray2;
+			padding-bottom: 5px;
+			margin: 30px auto 0;
+			font-size: 80px;
+			color: $gray-light;
+		}
+		.txt-title {
+			font-size: $f-size + 2;
+			font-weight: $f-bold;
+			text-transform: uppercase;
+			color: $gray-light;
+			padding-top: 10px;
+			padding-bottom: 20px;
+			z-index: 2;
+
+		}
+	}
+}
+// 
+// Arrown Slide
+// 
+
+.rslides_tabs  {
+  position: absolute;
+  bottom: 40px;
+  z-index: 3;
+  left: 50%;
+  @include translate(-50%,0);
+  list-style: none;
+  margin: 0 auto;
+  li {
+  	text-indent: -99999px;
+  	display: inline-block;
+  	width: 20px;
+  	height: 20px;
+  	@include border-radius(100%);
+  	background: $gray-light;
+  	margin: 0 5px;
+  	a {
+  		display: block;
+  	}
+  	&.rslides_here {
+  		background: $gray-lighter;
+  	}
+  }
+}
+
+
+.logo-main {
+	float: left;
+}
+
+.txt-trust {
+	float: left;
+	padding-top: 20px;
+}
+.title-txt {
+	border-bottom: solid 1px $gray3;
+	text-transform: uppercase;
+	font-weight: $f-bold;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+.form-homepage {
+	padding: 0 30px;
+	background: $gray-lightest;
+	bottom: -80px;
+	position: relative;
+	z-index: 2;
+
+	.btn-submit {
+		float: right;
+	}
+	.about-us {
+		padding-right: 20px;
+	}
+	.form-contact {
+		padding-left: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+// Parallax
+// 
+.parallax-content{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+}
+
+
+.parallax-content img {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	max-width: none;
+}
+
+.txt-header {
+	border-bottom: solid 1px $gray7;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	text-transform: uppercase;
+	width: 30%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: $f-size + 6;
+	font-weight: $f-bold;
+	margin-bottom: 20px;
+}
+
+.txt-year {
+	font-size: 50px;
+	font-weight: $f-bold;
+	line-height: 100%;
+}
+
+.footer {
+	background: $gray-light;
+	.footer-copy {
+		background: $gray8;
+		padding: 10px 0;
+		text-align: center;
+		.txt-copyright {
+			width: 50%;
+			margin: 0 auto;
+			font-size: $f-size - 2;
+		}
+	}
+	.footer-top {
+		width: 60%;
+		margin: 0 auto;
+		.txt-footer {
+			color: $gray-lightest;
+			font-size: $f-size + 6;
+			text-transform: uppercase;
+			position: relative;
+			text-align: center;
+			padding: 20px 0;
+			margin-bottom: 20px;
+			&:after {
+				content: "";
+				background: $gray-lightest;
+				height: 1px;
+				position: absolute;
+				bottom: 0;
+				margin: 0 auto;
+				width: 60%;
+				left: 50%;
+				@include translate(-50%,0);
+			}
+		}
+		.txt-link-footer {
+			color: $white;
+			ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				li {
+					padding: 5px 0;
+					a {
+						text-decoration: none;
+						color: $white;
+					}
+				}
+			}
+			.link-social {
+				margin-bottom: 20px;
+				.cirlce {
+					@include border-radius(100%);
+					background: $white;
+					display: inline-block;
+					text-align: center;
+					vertical-align: middle;
+					width: 40px;
+					height: 40px;
+					font-size: 30px;
+					line-height: 40px;
+					> i {
+						color: $gray-light;
+					}
+				}
+			}
 		}
 	}
 }

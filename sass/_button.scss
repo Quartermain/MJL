@@ -1,0 +1,13 @@
+.btn {
+	padding: 10px 15px;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: $f-size - 2;
+	font-weight: $f-bold;
+	text-decoration: none;
+	color: $gray4;
+}
+
+.btn-outline {
+	border: solid 1px $gray4;
+}
