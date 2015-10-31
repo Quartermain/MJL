@@ -50,8 +50,8 @@ or wrap each row of columns in a @include row */
 
 @font-face {
   font-family: 'icomoon';
-  src: url("fonts/icomoon.eot?nf8aqf");
-  src: url("../fonts/icomoon.eot?nf8aqf#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?nf8aqf") format("truetype"), url("../fonts/icomoon.woff?nf8aqf") format("woff"), url("../fonts/icomoon.svg?nf8aqf#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?gs9sw4");
+  src: url("../fonts/icomoon.eot?gs9sw4#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?gs9sw4") format("truetype"), url("../fonts/icomoon.woff?gs9sw4") format("woff"), url("../fonts/icomoon.svg?gs9sw4#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -70,21 +70,36 @@ or wrap each row of columns in a @include row */
 }
 
 /* line 26, ../sass/_fonts.scss */
+.icon-blog:before {
+  content: "\e904";
+}
+
+/* line 29, ../sass/_fonts.scss */
+.icon-lock:before {
+  content: "\e905";
+}
+
+/* line 32, ../sass/_fonts.scss */
+.icon-security:before {
+  content: "\e906";
+}
+
+/* line 35, ../sass/_fonts.scss */
 .icon-house3:before {
   content: "\e900";
 }
 
-/* line 29, ../sass/_fonts.scss */
+/* line 38, ../sass/_fonts.scss */
 .icon-house4:before {
   content: "\e901";
 }
 
-/* line 32, ../sass/_fonts.scss */
+/* line 41, ../sass/_fonts.scss */
 .icon-house2:before {
   content: "\e902";
 }
 
-/* line 35, ../sass/_fonts.scss */
+/* line 44, ../sass/_fonts.scss */
 .icon-house:before {
   content: "\e903";
 }
@@ -1047,6 +1062,24 @@ h6, .h6 {
   position: relative;
 }
 
+/* line 1, ../sass/page/_blog.scss */
+.content-faq {
+  padding: 30px 20px;
+}
+
+/* line 5, ../sass/page/_blog.scss */
+.blog-element-faq {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+/* line 11, ../sass/page/_blog.scss */
+.content-blog {
+  background: #e6e5e5;
+  padding: 30px 0;
+}
+
 /* line 1, ../sass/_theme-styles.scss */
 body {
   margin: 0;
@@ -1104,42 +1137,47 @@ p {
 }
 
 /* line 35, ../sass/_theme-styles.scss */
+.mar-top30 {
+  margin-top: 30px;
+}
+
+/* line 39, ../sass/_theme-styles.scss */
 .respon-img {
   max-width: 100%;
 }
 
-/* line 39, ../sass/_theme-styles.scss */
+/* line 43, ../sass/_theme-styles.scss */
 .wrapper {
   margin: 0 auto;
 }
 
-/* line 44, ../sass/_theme-styles.scss */
+/* line 48, ../sass/_theme-styles.scss */
 .bg-lightest {
   background: #f1f1f1;
 }
 
-/* line 49, ../sass/_theme-styles.scss */
+/* line 53, ../sass/_theme-styles.scss */
 .bg-lighter {
   background: #cfcdbe;
   padding-bottom: 30px;
 }
 
-/* line 54, ../sass/_theme-styles.scss */
+/* line 58, ../sass/_theme-styles.scss */
 .bg-white {
   background: #fff;
 }
 
-/* line 58, ../sass/_theme-styles.scss */
+/* line 62, ../sass/_theme-styles.scss */
 .bg-gray-blue {
   background: #cfcdbe;
 }
 
-/* line 61, ../sass/_theme-styles.scss */
+/* line 65, ../sass/_theme-styles.scss */
 .bg-gray10 {
   background: #a0a0a0;
 }
 
-/* line 65, ../sass/_theme-styles.scss */
+/* line 69, ../sass/_theme-styles.scss */
 .form-input {
   background: #e7e7e7;
   border: none;
@@ -1154,7 +1192,7 @@ p {
   -webkit-box-sizing: border-box;
 }
 
-/* line 79, ../sass/_theme-styles.scss */
+/* line 83, ../sass/_theme-styles.scss */
 .select-form {
   width: 100%;
   padding: 10px;
@@ -1164,39 +1202,39 @@ p {
   border: none;
 }
 
-/* line 90, ../sass/_theme-styles.scss */
+/* line 94, ../sass/_theme-styles.scss */
 .pad-block, .block-director, .about-us-page .bg-gray-blue {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-/* line 95, ../sass/_theme-styles.scss */
+/* line 99, ../sass/_theme-styles.scss */
 .block-director {
   color: #fff;
 }
-/* line 97, ../sass/_theme-styles.scss */
+/* line 101, ../sass/_theme-styles.scss */
 .block-director .title-page {
   color: #fff;
 }
-/* line 99, ../sass/_theme-styles.scss */
+/* line 103, ../sass/_theme-styles.scss */
 .block-director .title-page hr {
   background: #fff;
 }
 
-/* line 107, ../sass/_theme-styles.scss */
+/* line 111, ../sass/_theme-styles.scss */
 .about-us-page textarea {
   height: 212px;
 }
 
-/* line 117, ../sass/_theme-styles.scss */
+/* line 121, ../sass/_theme-styles.scss */
 .contact-map {
   padding-bottom: 30px;
 }
-/* line 119, ../sass/_theme-styles.scss */
+/* line 123, ../sass/_theme-styles.scss */
 .contact-map .title-txt {
   padding-top: 30px;
 }
-/* line 121, ../sass/_theme-styles.scss */
+/* line 125, ../sass/_theme-styles.scss */
 .contact-map .title-txt > span {
   font-size: 14px;
   text-transform: none;

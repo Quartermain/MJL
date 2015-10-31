@@ -21,34 +21,15 @@ $(window).ready(function(){
 			$(".menu-child2").css("right",wHumberger);
 
 			$(".menu-child .show-child").click(function(){
-				$(".menu-child2").toggleClass("dis-none");
+				$(".menu-child2").not($(this).siblings(".menu-child2")).addClass("dis-none");
+				$(this).siblings(".menu-child2").toggleClass("dis-none");
 			});
 		});
 
 	})
 
 	// Split text service
-	
-	function splitTextService (){
-		// $(".button-read .btn-split").click(function(){
-		// 	$(".content-service").val().length;
-		// 	var str = "bineet kumar, test, asdfasd";
-		// 	str1 = str.split("test");
-		
-		var length = $(".content-service").text().length;
-		if ( length > 100) {
-			
-			iTotalWords = $(this).text().split(' ').length;
-			  
-		};
-	};
 
-	splitTextService ()
-	// end
-	// 
-	// 
-	
-	
 });
 
 
