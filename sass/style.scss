@@ -3,6 +3,7 @@
 @import "mixins";
 @import "media-queries_grid-system";
 @import "include-media";
+@import "responsive-visibility";
 
 
 
@@ -19,6 +20,7 @@
 @import "page/homepage";
 @import "page/service";
 @import "page/blog";
+@import "page/mobile";
 @import "theme-styles";
 
 // Block

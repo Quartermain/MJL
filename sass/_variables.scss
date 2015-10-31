@@ -19,13 +19,24 @@ $bs-sm: ">xs", "<md";
 $bs-md: ">md", "<lg";
 $bs-lg: ">=lg", "<xxlg";
 $bs-xxlg: ">=xxlg", "screen";
-$bs-xs-sm:  ">0px", "<md";
-$bs-xs-md:  ">0px", "<lg";
+
+$bs-xs-sm:  ">0px", "<$sm";
+$bs-xs-md:  ">0px", "<$lg";
 $bs-sm-md:  ">=sm", "<lg";
 $bs-sm-lg:  ">=sm", "<xxlg";
 $bs-md-lg:  ">=md", "<xxlg";
 $bs-md-xxlg:  ">=md", "screen";
 $bs-lg-xxlg:  ">=lg", "screen";
+
+$screen-xs-max: $sm - 1;
+$screen-sm-max: $md - 1;
+$screen-md-max: $lg - 1;
+$screen-lg-max: $xxlg - 1;
+
+$screen-xs-min:	$sm;
+$screen-sm-min:	$md;
+$screen-md-min:	$lg;
+$screen-lg-min:	$xxlg;
 
 // device specific
 // $mobile: ">0px", "<=phone";
@@ -74,6 +85,9 @@ $drakest-gray:		#191919;
 $yallow:			#e7e1a7;
 
 $c-base:			$gray;
+
+$c-mobile1:			#d2d1c3;
+$c-mobile2:			#dad8d8;
 
 
 // Font size

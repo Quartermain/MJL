@@ -9,6 +9,10 @@
 	z-index: 5;
 	.header {
 		padding-left: percentage(50/1590);
+		@include media($bs-xs...) {
+			padding-left: 0;
+			background: $gray-light;
+		}
 		@include clearfix;
 		.left-header {
 			width: percentage(1310/1590);
@@ -58,6 +62,12 @@
 	margin-left: 20px;
 	margin-right: percentage(37/205);
 	width: 80px;
+	@include media($bs-xs...) {
+		background: $gray-light;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+	}
 	&:hover,
 	&.active {
 		background: $gray-light;
@@ -65,6 +75,11 @@
 		padding-left: 20px;
 		margin: 0;
 		padding-bottom: 15px;
+		@include media($bs-xs...) {
+			padding-left: 20px;
+			background: $gray-light;
+			padding-bottom: 10px;
+		}
 	}
 	> i {
 		margin-right: 10px;
@@ -209,6 +224,9 @@
   @include translate(-50%,0);
   list-style: none;
   margin: 0 auto;
+  @include media($bs-xs...) {
+  	bottom: 15px;
+  }
   li {
   	text-indent: -99999px;
   	display: inline-block;
@@ -247,11 +265,17 @@
 	padding: 0 30px;
 	padding-bottom: 20px;
 	background: $gray-lightest;
+	@include media($bs-xs...) {
+		padding: 20px 0;
+	}
 
 	&.after-parellex {
 		position: relative;
 		bottom: -80px;
 		z-index: 2;
+		@include media($bs-xs...) {
+			bottom: 0;
+		}
 	}
 
 	.btn-submit {
@@ -261,10 +285,16 @@
 	}
 	.about-us {
 		padding-right: 20px;
+		@include media($bs-xs...) {
+			padding-right: 0;
+		}
 	}
 	.form-contact {
 		padding-left: 20px;
 		padding-bottom: 20px;
+		@include media($bs-xs...) {
+			padding: 0;
+		}
 	}
 }
 
@@ -279,16 +309,24 @@
 	width: 100%;
 	height: 400px;
 	overflow: hidden;
+	@include media($bs-xs...) {
+		width: auto;
+		height: 300px;
+	}
+	img {
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		max-width: none;
+		@include media($bs-xs...) {
+			width: auto;
+			height: 400px;
+		}
+	}
 }
 
-
-.parallax-content img {
-	bottom: 0;
-	left: 0;
-	position: absolute;
-	width: 100%;
-	max-width: none;
-}
+// end
 
 .txt-header {
 	border-bottom: solid 1px $gray7;
@@ -301,12 +339,19 @@
 	font-size: $f-size + 6;
 	font-weight: $f-bold;
 	margin-bottom: 20px;
+	@include media($bs-xs...) {
+		width: 100%;
+		text-align: left;
+	}
 }
 
 .txt-year {
 	font-size: 50px;
 	font-weight: $f-bold;
 	line-height: 100%;
+	@include media($bs-xs...) {
+		font-size: 30px;
+	}
 }
 
 .footer {
@@ -319,10 +364,16 @@
 			width: 50%;
 			margin: 0 auto;
 			font-size: $f-size - 2;
+			@include media($bs-xs...) {
+				width: 100%;
+			}
 		}
 	}
 	.footer-top {
 		width: 60%;
+		@include media($bs-xs...) {
+			width: 100%;
+		}
 		margin: 0 auto;
 		.txt-footer {
 			color: $gray-lightest;
@@ -332,6 +383,9 @@
 			text-align: center;
 			padding: 20px 0;
 			margin-bottom: 20px;
+			@include media($bs-xs...) {
+				text-align: left;
+			}
 			&:after {
 				content: "";
 				background: $gray-lightest;
@@ -342,6 +396,9 @@
 				width: 60%;
 				left: 50%;
 				@include translate(-50%,0);
+				@include media($bs-xs...) {
+					width: 100%;
+				}
 			}
 		}
 		.txt-link-footer {

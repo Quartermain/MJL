@@ -29,6 +29,8 @@ p {
 	}
 	@include media($bs-xs...) {
 		max-width: $xs;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
 
@@ -48,6 +50,13 @@ p {
 	background: $gray-lightest;
 }
 
+.bg-gray11 {
+	background: $gray11;
+}
+
+.bg-mobile2 {
+	background: $c-mobile2;
+}
 
 .bg-lighter {
 	background: $gray-lighter;

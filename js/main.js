@@ -43,7 +43,19 @@ $(window).ready(function(){
         $(target).height(maxHeight);
     };
 	_setSameHeight('.block-same-height');
-    
+
+	// end
+	// 
+	
+	function heightHeaderMobile(){
+		var heightHotLine = $(".header").outerHeight();
+		var heightLogo = $(".container-logo").outerHeight();
+		var sumHeight = heightHotLine + heightLogo;
+		$(".sumHeightMobile").css("margin-top",sumHeight);
+	}
+	if ($(window).width() < 768) {
+    	heightHeaderMobile();
+	};
 
     // Js read more, read less
     // 
