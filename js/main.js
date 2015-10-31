@@ -26,9 +26,55 @@ $(window).ready(function(){
 			});
 		});
 
-	})
+	});
 
-	// Split text service
+
+	// function to set same height
+	
+    var _setSameHeight = function (target) {
+
+        var heights = $(target).map(function () {
+                $(this).height('100%');
+                return $(this).height();
+            }).get(),
+
+            maxHeight = Math.max.apply(null, heights);
+
+        $(target).height(maxHeight);
+    };
+	_setSameHeight('.block-same-height');
+    
+
+    // Js read more, read less
+    // 
+    // 
+    function readLess(){
+    	$(".expander").each(function(){
+
+			$(this).expander({
+				slicePoint: 500,
+				afterExpand: function() {
+					$(this).find('.read-less .less-link').after($(this).find('.enquire-link'));
+				},
+				afterCollapse: function() {
+					console.log($(this).find('.read-more .more-link'));
+					$(this).find('.read-more .more-link').after($(this).find('.enquire-link'));
+				},
+				userCollapsePrefix: '',
+				expandPrefix:'',
+				expandEffect: 'slideDown',
+				//expandSpeed: 800,
+				collapseEffect: 'slideUp',
+				//collapseSpeed: 800,
+			});
+
+			$(this).find('.read-more .more-link').after($(this).find('.enquire-link'));
+			$(this).find('.read-more').before($('<span class="three-dot">...</div>'));
+    	});
+    }
+    readLess();
+
+    // end
 
 });
 

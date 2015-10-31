@@ -11,3 +11,15 @@
 .btn-outline {
 	border: solid 1px $gray4;
 }
+
+.read-more,
+.read-less {
+	display: block;
+	margin-top: $mg20;
+	.more-link,
+	.less-link {
+		@extend .btn;
+		@extend .btn-outline;
+		margin-right: 10px;
+	}
+}

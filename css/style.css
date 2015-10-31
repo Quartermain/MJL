@@ -33,7 +33,10 @@ or wrap each row of columns in a @include row */
 }
 
 /* line 1, ../sass/_button.scss */
-.btn {
+.btn, .read-more .more-link,
+.read-more .less-link,
+.read-less .more-link,
+.read-less .less-link {
   padding: 10px 15px;
   display: inline-block;
   text-transform: uppercase;
@@ -44,8 +47,25 @@ or wrap each row of columns in a @include row */
 }
 
 /* line 11, ../sass/_button.scss */
-.btn-outline {
+.btn-outline, .read-more .more-link,
+.read-more .less-link,
+.read-less .more-link,
+.read-less .less-link {
   border: solid 1px #070707;
+}
+
+/* line 15, ../sass/_button.scss */
+.read-more,
+.read-less {
+  display: block;
+  margin-top: 20px;
+}
+/* line 19, ../sass/_button.scss */
+.read-more .more-link,
+.read-more .less-link,
+.read-less .more-link,
+.read-less .less-link {
+  margin-right: 10px;
 }
 
 @font-face {
@@ -1034,7 +1054,13 @@ h6, .h6 {
   padding: 20px 0;
 }
 /* line 66, ../sass/page/_service.scss */
-.button-read .btn {
+.button-read .btn, .button-read .read-more .more-link, .read-more .button-read .more-link,
+.button-read .read-more .less-link,
+.read-more .button-read .less-link,
+.button-read .read-less .more-link,
+.read-less .button-read .more-link,
+.button-read .read-less .less-link,
+.read-less .button-read .less-link {
   margin-right: 20px;
 }
 
@@ -1071,13 +1097,46 @@ h6, .h6 {
 .blog-element-faq {
   background: #fff;
   padding: 20px;
-  margin-bottom: 30px;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  overflow: auto;
+  padding-bottom: 70px;
+}
+/* line 13, ../sass/page/_blog.scss */
+.blog-element-faq .btn-blog {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }
 
-/* line 11, ../sass/page/_blog.scss */
+/* line 20, ../sass/page/_blog.scss */
 .content-blog {
   background: #e6e5e5;
-  padding: 30px 0;
+  padding: 30px 0 0;
+}
+/* line 23, ../sass/page/_blog.scss */
+.content-blog .article-blog {
+  width: 80%;
+  border-bottom: solid 1px #585858;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+/* line 29, ../sass/page/_blog.scss */
+.content-blog .article-blog .header-title .title-article {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+/* line 34, ../sass/page/_blog.scss */
+.content-blog .article-blog .header-title .date-time {
+  font-size: 12px;
+  color: #989898;
+  margin-bottom: 5px;
 }
 
 /* line 1, ../sass/_theme-styles.scss */
@@ -1151,33 +1210,33 @@ p {
   margin: 0 auto;
 }
 
-/* line 48, ../sass/_theme-styles.scss */
+/* line 47, ../sass/_theme-styles.scss */
 .bg-lightest {
   background: #f1f1f1;
 }
 
-/* line 53, ../sass/_theme-styles.scss */
+/* line 52, ../sass/_theme-styles.scss */
 .bg-lighter {
   background: #cfcdbe;
   padding-bottom: 30px;
 }
 
-/* line 58, ../sass/_theme-styles.scss */
+/* line 57, ../sass/_theme-styles.scss */
 .bg-white {
   background: #fff;
 }
 
-/* line 62, ../sass/_theme-styles.scss */
+/* line 61, ../sass/_theme-styles.scss */
 .bg-gray-blue {
   background: #cfcdbe;
 }
 
-/* line 65, ../sass/_theme-styles.scss */
+/* line 64, ../sass/_theme-styles.scss */
 .bg-gray10 {
   background: #a0a0a0;
 }
 
-/* line 69, ../sass/_theme-styles.scss */
+/* line 68, ../sass/_theme-styles.scss */
 .form-input {
   background: #e7e7e7;
   border: none;
@@ -1192,7 +1251,7 @@ p {
   -webkit-box-sizing: border-box;
 }
 
-/* line 83, ../sass/_theme-styles.scss */
+/* line 82, ../sass/_theme-styles.scss */
 .select-form {
   width: 100%;
   padding: 10px;
@@ -1202,39 +1261,39 @@ p {
   border: none;
 }
 
-/* line 94, ../sass/_theme-styles.scss */
+/* line 93, ../sass/_theme-styles.scss */
 .pad-block, .block-director, .about-us-page .bg-gray-blue {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-/* line 99, ../sass/_theme-styles.scss */
+/* line 98, ../sass/_theme-styles.scss */
 .block-director {
   color: #fff;
 }
-/* line 101, ../sass/_theme-styles.scss */
+/* line 100, ../sass/_theme-styles.scss */
 .block-director .title-page {
   color: #fff;
 }
-/* line 103, ../sass/_theme-styles.scss */
+/* line 102, ../sass/_theme-styles.scss */
 .block-director .title-page hr {
   background: #fff;
 }
 
-/* line 111, ../sass/_theme-styles.scss */
+/* line 110, ../sass/_theme-styles.scss */
 .about-us-page textarea {
   height: 212px;
 }
 
-/* line 121, ../sass/_theme-styles.scss */
+/* line 120, ../sass/_theme-styles.scss */
 .contact-map {
   padding-bottom: 30px;
 }
-/* line 123, ../sass/_theme-styles.scss */
+/* line 122, ../sass/_theme-styles.scss */
 .contact-map .title-txt {
   padding-top: 30px;
 }
-/* line 125, ../sass/_theme-styles.scss */
+/* line 124, ../sass/_theme-styles.scss */
 .contact-map .title-txt > span {
   font-size: 14px;
   text-transform: none;
