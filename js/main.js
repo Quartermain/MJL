@@ -1,4 +1,10 @@
 $(window).ready(function(){
+
+	// Resize window
+	$(window).resize(function(){
+	    heightHeaderMobile();
+	}); 
+
 	// Function slider homepage
 	$(function() {
 		$(".rslides").responsiveSlides({
@@ -42,11 +48,17 @@ $(window).ready(function(){
 
         $(target).height(maxHeight);
     };
+
+	if ($(window).width() < 768) {
+		$(".article-blog .grid-multi").find("div").removeClass("block-same-height");
+	};
+
 	_setSameHeight('.block-same-height');
 
 	// end
 	// 
 	
+	// Height Summer header
 	function heightHeaderMobile(){
 		var heightHotLine = $(".header").outerHeight();
 		var heightLogo = $(".container-logo").outerHeight();
@@ -56,6 +68,14 @@ $(window).ready(function(){
 	if ($(window).width() < 768) {
     	heightHeaderMobile();
 	};
+
+	// Colspan mobile
+	// 
+	$(".header-toggle").click(function(){
+		$(this).parent().find($(".conten-toggle")).toggleClass("dis-block");
+		$(this).find($(".arrown-mobile .fa")).toggleClass("fa-chevron-up").toggleClass("fa-chevron-down");
+	});
+
 
     // Js read more, read less
     // 

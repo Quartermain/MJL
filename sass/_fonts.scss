@@ -23,6 +23,18 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-local:before {
+	content: "\e90b";
+}
+.icon-faq-person:before {
+	content: "\e908";
+}
+.icon-service-local:before {
+	content: "\e909";
+}
+.icon-help-contact:before {
+	content: "\e90a";
+}
 .icon-logo-mjl-mobile:before {
 	content: "\e907";
 }
@@ -47,4 +59,3 @@
 .icon-house:before {
 	content: "\e903";
 }
-

@@ -23,9 +23,13 @@ p {
 	}
 	@include media($bs-md...) {
 		max-width: $md;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 	@include media($bs-sm...) {
 		max-width: $sm;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 	@include media($bs-xs...) {
 		max-width: $xs;
@@ -97,6 +101,10 @@ p {
 	border: none;
 }
 
+.dis-block {
+	display: block;
+}
+
 // Page About us
 
 .pad-block {
@@ -121,6 +129,10 @@ p {
 	}
 	.bg-gray-blue {
 		@extend .pad-block;
+		@include media($bs-xs...) {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
 	}
 }
 

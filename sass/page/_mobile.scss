@@ -31,11 +31,26 @@
 	}
 }
 
+
+.arrown-mobile {
+	display: none;
+}
+
 @include media($bs-xs...) {
+
+	.banner-page {
+		overflow: hidden;
+		.respon-img {
+			max-width: none;
+			width: auto;
+			max-height: 200px;
+		}
+	}
 
 	// Homepage
 	// 
-	// 
+	
+
 	.block-header {
 		.container {
 			margin-left: -20px;
@@ -52,29 +67,68 @@
 		}
 	}
 
-	.four-block {
-		.block-security {
-			padding: 20px 0;
+	
+	.block-toggle {		
+		.icon-four {
+			font-size: 60px;
+			color: $gray-light;
+			float: left;
+			margin-right: 10px;
+		}
+		.txt-four-block {
+			color: $gray-light;
+			float: left;
+			font-size: $f-size + 4;
+			font-weight: $f-bold;
+			text-transform: uppercase;
+		}
+		.header-toggle {
 			border-bottom: solid 1px $c-mobile1;
-			.icon-four {
-				font-size: 60px;
-				color: $gray-light;
-				float: left;
-				margin-right: 10px;
-			}
-			.txt-four-block {
-				color: $gray-light;
-				float: left;
-				font-size: $f-size + 4;
-				font-weight: $f-bold;
-				text-transform: uppercase;
+			padding-bottom: 20px;
+			margin: 0 -20px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 20px;
+			position: relative;
+			hr {
+				height: 0;
+				margin: 0;
 			}
 			.arrown-mobile {
-				float: right;
 				font-size: $f-size + 6;
+				position: absolute;
+				right: 20px;
+				top: 20px;
+				display: block;
 			}
+		}
+		.conten-toggle {
+			padding: 20px;
+			display: none;
+			background: $white;
+			margin-left: -$mg20;
+			margin-right: -$mg20;
+		}
+
+		.dis-block {
+			display: block;
 		}
 	}
 
+	.form-contact-mobile {
+		.header-toggle {
+			background: $gray-lighter;
+		}
+	}
 	// End
+	// 
+	.title-mobile {
+		margin-top: $mg20;
+		i {
+			font-size: 60px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+	}
 }

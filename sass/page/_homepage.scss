@@ -266,7 +266,7 @@
 	padding-bottom: 20px;
 	background: $gray-lightest;
 	@include media($bs-xs...) {
-		padding: 20px 0;
+		padding: 20px 0 0;
 	}
 
 	&.after-parellex {
@@ -309,6 +309,10 @@
 	width: 100%;
 	height: 400px;
 	overflow: hidden;
+	@include media($bs-sm...) {
+		width: auto;
+		height: 300px;
+	}
 	@include media($bs-xs...) {
 		width: auto;
 		height: 300px;
@@ -319,6 +323,10 @@
 		position: absolute;
 		width: 100%;
 		max-width: none;
+		@include media($bs-sm...) {
+			width: auto;
+			height: 320px;
+		}
 		@include media($bs-xs...) {
 			width: auto;
 			height: 400px;
@@ -349,6 +357,9 @@
 	font-size: 50px;
 	font-weight: $f-bold;
 	line-height: 100%;
+	@include media($bs-sm...) {
+		font-size: 40px;
+	}
 	@include media($bs-xs...) {
 		font-size: 30px;
 	}
