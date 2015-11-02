@@ -1,7 +1,7 @@
 // Core variables and mixins
 @import "variables";
 @import "mixins";
-@import "mixins-rem";
+//@import "mixins-rem";
 @import "media-queries_grid-system";
 @import "include-media";
 @import "responsive-visibility";
@@ -18,11 +18,11 @@
 
 // Style globle
 
+@import "theme-styles";
 @import "page/homepage";
 @import "page/service";
 @import "page/blog";
 @import "page/mobile";
-@import "theme-styles";
 
 // Block
 //

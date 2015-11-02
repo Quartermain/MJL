@@ -1,9 +1,7 @@
 $(window).ready(function(){
 
 	// Resize window
-	$(window).resize(function(){
-	    heightHeaderMobile();
-	}); 
+	
 
 	// Function slider homepage
 	$(function() {
@@ -67,9 +65,14 @@ $(window).ready(function(){
 		var sumHeight = heightHotLine + heightLogo;
 		$(".sumHeightMobile").css("margin-top",sumHeight);
 	}
+
 	if ($(window).width() < 768) {
     	heightHeaderMobile();
 	};
+
+	$(window).resize(function(){
+	    heightHeaderMobile();
+	});
 
 	// Colspan mobile
 	// 
