@@ -15,7 +15,7 @@
 	overflow: auto;
 	margin-bottom: 30px;
 	@include media($bs-xs...) {
-		padding: $pd20 0;
+		padding: $pd20;
 		margin-bottom: 0;
 	}
 	.btn-blog {
