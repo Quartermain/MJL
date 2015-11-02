@@ -18,7 +18,7 @@
 			width: percentage(1310/1590);
 			float: left;
 			.txt-trust {
-				font-size: $f-size - 2;
+				font-size: 1rem - 0.1rem;
 				color: $white;
 				text-transform: uppercase;
 				display: inline-block;
@@ -253,6 +253,8 @@
 .txt-trust {
 	float: left;
 	padding-top: 20px;
+	@include rem-fallback(margin-left, 1);
+	@include rem-fallback(padding-left, 1);
 }
 .title-txt {
 	border-bottom: solid 1px $gray3;

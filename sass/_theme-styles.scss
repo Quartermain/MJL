@@ -2,9 +2,13 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: $font-main;
-	font-size: $f-size;
 	color: $gray-light;
 	line-height: 20px;
+	@include font-size(1.6);
+	
+	@media (min-width: 1500px) {
+		@include font-size(2.5);
+	}
 }
 
 p {
