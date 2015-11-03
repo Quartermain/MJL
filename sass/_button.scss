@@ -1,8 +1,8 @@
 .btn {
-	padding: 10px 15px;
+	padding: 0.5rem 1.5rem;
 	display: inline-block;
 	text-transform: uppercase;
-	font-size: $f-size - 2;
+	font-size: 1rem;
 	font-weight: $f-bold;
 	text-decoration: none;
 	color: $gray4;
@@ -10,16 +10,21 @@
 
 .btn-outline {
 	border: solid 1px $gray4;
+	&:hover {
+		background: $gray4;
+		color: $white;
+		border: solid 1px $gray4;
+	}
 }
 
 .read-more,
 .read-less {
 	display: block;
-	margin-top: $mg20;
+	margin-top: 1rem;
 	.more-link,
 	.less-link {
 		@extend .btn;
 		@extend .btn-outline;
-		margin-right: 10px;
+		margin-right: 0.5rem;
 	}
 }

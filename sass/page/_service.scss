@@ -1,11 +1,11 @@
 .service-page {
 	.block-our {
 		background: $gray10 url("../images/lock-service.png") no-repeat right center;
-		background-size: auto 100%;
+		background-size: 55% auto;
 		.txt-our {
-			font-size: $f-size + 10;
+			font-size: 1.5rem;
 			color: $white;
-			padding: 40px 0;
+			padding: 3rem 0;
 			line-height: 100%;
 		}
 	}
@@ -18,29 +18,30 @@
 			border: solid 1px $white;
 			color: $white;
 		}
-		padding-bottom: 30px;
+		padding-bottom: 1.5rem;
 	}
 }
 
 .block-1 {
-	padding: 0 0 30px;
+	padding: 0 0 1.5rem;
 }
 
 .title-page {
-	padding-top: 30px;
+	padding-top: 1.5rem;
 	> i {
-		font-size: 60px;
+		font-size: 5rem;
 		color: $gray-light;
 		display: inline-block;
 		vertical-align: middle;
 		+ .txt {
-			margin-left: 10px;
+			margin-left: 0.5rem;
 		}
 	}
 	.txt {
 		display: inline-block;
 		vertical-align: middle;
-		font-size: $f-size + 4;
+		font-size: 1.5rem;
+		line-height: 100%;
 		text-transform: uppercase;
 		font-weight: $f-bold;
 	}
@@ -48,7 +49,7 @@
 		background: $gray9;
 		height: 1px;
 		width: 15%;
-		margin: 20px 0;
+		margin: 1rem 0;
 		border: none;
 	}
 }
@@ -57,21 +58,22 @@
 		list-style: none;
 		li {
 			list-style: none;
+			padding: 0.2rem 0;
 		}
 	}
 }
 
 .button-read {
-	padding: 20px 0;
+	padding: 1rem 0;
 	.btn {
-		margin-right: 20px;
+		margin-right: 1rem;
 	}
 }
 
 .block-service1 {
 	background: $white url("../images/bg-service1.png") no-repeat right center;
 	background-size: auto 100%;
-	padding-bottom: 20px;
+	padding-bottom: 1rem;
 	position: relative;
 	@include media($bs-sm...) {
 		background: $white;
@@ -84,7 +86,7 @@
 .block-service2 {
 	background: $gray-lightest url("../images/bg-service2.png") no-repeat right center;
 	background-size: auto 100%;
-	padding-bottom: 20px;
+	padding-bottom: 1rem;
 	position: relative;
 	@include media($bs-sm...) {
 		background: $gray-lightest;
@@ -98,7 +100,7 @@
 .block-service3 {
 	background: $gray11 url("../images/bg-service3.png") no-repeat right center;
 	background-size: auto 100%;
-	padding-bottom: 20px;
+	padding-bottom: 1rem;
 	position: relative;
 	@include media($bs-sm...) {
 		background: $gray11;
