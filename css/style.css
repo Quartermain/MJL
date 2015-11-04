@@ -1,7 +1,13 @@
-@media screen and (min-width: 1500px) {
-  /* line 106, ../sass/_variables.scss */
+@media screen and (min-width: 1590px) {
+  /* line 107, ../sass/_variables.scss */
   html {
     font-size: 22px;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* line 107, ../sass/_variables.scss */
+  html {
+    font-size: 14px;
   }
 }
 
@@ -1419,6 +1425,7 @@ p {
 /* line 385, ../sass/page/_homepage.scss */
 .footer .footer-top {
   width: 60%;
+  padding-bottom: 1rem;
   margin: 0 auto;
 }
 @media (min-width: 1px) and (max-width: 760px) {
@@ -1428,7 +1435,7 @@ p {
   }
 }
 
-/* line 391, ../sass/page/_homepage.scss */
+/* line 392, ../sass/page/_homepage.scss */
 .footer .footer-top .txt-footer {
   color: #f1f1f1;
   font-size: 1.5rem;
@@ -1440,13 +1447,13 @@ p {
   line-height: 100%;
 }
 @media (min-width: 1px) and (max-width: 760px) {
-  /* line 391, ../sass/page/_homepage.scss */
+  /* line 392, ../sass/page/_homepage.scss */
   .footer .footer-top .txt-footer {
     text-align: left;
   }
 }
 
-/* line 403, ../sass/page/_homepage.scss */
+/* line 404, ../sass/page/_homepage.scss */
 .footer .footer-top .txt-footer:after {
   content: "";
   background: #f1f1f1;
@@ -1462,36 +1469,36 @@ p {
   transform: translate(-50%, 0);
 }
 @media (min-width: 1px) and (max-width: 760px) {
-  /* line 403, ../sass/page/_homepage.scss */
+  /* line 404, ../sass/page/_homepage.scss */
   .footer .footer-top .txt-footer:after {
     width: 100%;
   }
 }
 
-/* line 418, ../sass/page/_homepage.scss */
+/* line 419, ../sass/page/_homepage.scss */
 .footer .footer-top .txt-link-footer {
   color: #fff;
 }
-/* line 420, ../sass/page/_homepage.scss */
+/* line 421, ../sass/page/_homepage.scss */
 .footer .footer-top .txt-link-footer ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 424, ../sass/page/_homepage.scss */
+/* line 425, ../sass/page/_homepage.scss */
 .footer .footer-top .txt-link-footer ul li {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
-/* line 426, ../sass/page/_homepage.scss */
+/* line 427, ../sass/page/_homepage.scss */
 .footer .footer-top .txt-link-footer ul li a {
   text-decoration: none;
   color: #fff;
 }
-/* line 432, ../sass/page/_homepage.scss */
+/* line 433, ../sass/page/_homepage.scss */
 .footer .footer-top .txt-link-footer .link-social {
   margin-bottom: 1rem;
 }
-/* line 434, ../sass/page/_homepage.scss */
+/* line 435, ../sass/page/_homepage.scss */
 .footer .footer-top .txt-link-footer .link-social .cirlce {
   border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -1503,10 +1510,18 @@ p {
   height: 1.5rem;
   font-size: 1.5rem;
   line-height: 100%;
+  padding: 0.5rem;
 }
-/* line 444, ../sass/page/_homepage.scss */
+/* line 446, ../sass/page/_homepage.scss */
 .footer .footer-top .txt-link-footer .link-social .cirlce > i {
   color: #4d4d4d;
+}
+
+/* line 455, ../sass/page/_homepage.scss */
+.banner-page {
+  width: auto;
+  overflow: hidden;
+  text-align: center;
 }
 
 /* line 2, ../sass/page/_service.scss */
@@ -1824,7 +1839,7 @@ p {
 
   /* line 72, ../sass/page/_mobile.scss */
   .block-toggle .icon-four {
-    font-size: 60px;
+    font-size: 4rem;
     color: #4d4d4d;
     float: left;
     margin-right: 10px;

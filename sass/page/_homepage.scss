@@ -384,6 +384,7 @@
 	}
 	.footer-top {
 		width: 60%;
+		padding-bottom: 1rem;
 		@include media($bs-xs...) {
 			width: 100%;
 		}
@@ -422,7 +423,7 @@
 				margin: 0;
 				padding: 0;
 				li {
-					padding: 1rem 0;
+					padding: 0.5rem 0;
 					a {
 						text-decoration: none;
 						color: $white;
@@ -441,6 +442,7 @@
 					height: 1.5rem;
 					font-size: 1.5rem;
 					line-height: 100%;
+					padding: 0.5rem;
 					> i {
 						color: $gray-light;
 					}
@@ -448,6 +450,12 @@
 			}
 		}
 	}
+}
+
+.banner-page {
+	width: auto;
+	overflow: hidden;
+	text-align: center;
 }
 
 @media

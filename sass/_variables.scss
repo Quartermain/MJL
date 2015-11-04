@@ -31,12 +31,12 @@ $bs-lg-xxlg:  ">=lg", "screen";
 $screen-xs-max: $sm - 1;
 $screen-sm-max: $md - 1;
 $screen-md-max: $lg - 1;
-$screen-lg-max: $xxlg - 1;
 
 $screen-xs-min:	$sm;
 $screen-sm-min:	$md;
 $screen-md-min:	$lg;
 $screen-lg-min:	$xxlg;
+$screen-xxlg-max:	$xxlg -1;
 
 // device specific
 // $mobile: ">0px", "<=phone";
@@ -101,12 +101,17 @@ $f-normal: 400;
 
 $f-size: 16px;
 $f-rem-retian: 22px;
+$f-size-base: 14px;
 
 
 html {
-  @media screen and (min-width: 1500px)  {
+  @media screen and (min-width: $xxlg)  {
   	font-size: $f-rem-retian;
   	$f-size: $f-rem-retian;
+  }
+  @media screen and (max-width: $md)  {
+  	font-size: 14px;
+  	$f-size: $f-size-base;
   }
 }
 
