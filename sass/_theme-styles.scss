@@ -81,7 +81,7 @@ p {
 	background: $gray5;
 	border: none;
 	color: $gray6;
-	padding: 10px;
+	padding: 0.5rem;
 	text-transform: capitalize;
 	width: 100%;
 	margin-bottom: 1rem;
@@ -91,10 +91,15 @@ p {
 	-webkit-box-sizing: border-box;
 }
 
+select {
+	padding: 0.5rem;
+	-webkit-appearance: initial;
+}
+
 .select-form {
 	width: 100%;
-	padding: 10px;
-	margin-bottom: 20px;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
 	background: $gray5;
 	color: $gray6;
 	border: none;

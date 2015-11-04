@@ -855,7 +855,7 @@ p {
   background: #e7e7e7;
   border: none;
   color: #a6a6a6;
-  padding: 10px;
+  padding: 0.5rem;
   text-transform: capitalize;
   width: 100%;
   margin-bottom: 1rem;
@@ -866,61 +866,67 @@ p {
 }
 
 /* line 94, ../sass/_theme-styles.scss */
+select {
+  padding: 0.5rem;
+  -webkit-appearance: initial;
+}
+
+/* line 99, ../sass/_theme-styles.scss */
 .select-form {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
   background: #e7e7e7;
   color: #a6a6a6;
   border: none;
   font-size: 1rem;
 }
 
-/* line 104, ../sass/_theme-styles.scss */
+/* line 109, ../sass/_theme-styles.scss */
 .dis-block {
   display: block;
 }
 
-/* line 110, ../sass/_theme-styles.scss */
+/* line 115, ../sass/_theme-styles.scss */
 .pad-block, .block-director, .about-us-page .bg-gray-blue {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-/* line 115, ../sass/_theme-styles.scss */
+/* line 120, ../sass/_theme-styles.scss */
 .block-director {
   color: #fff;
 }
-/* line 117, ../sass/_theme-styles.scss */
+/* line 122, ../sass/_theme-styles.scss */
 .block-director .title-page {
   color: #fff;
 }
-/* line 119, ../sass/_theme-styles.scss */
+/* line 124, ../sass/_theme-styles.scss */
 .block-director .title-page hr {
   background: #fff;
 }
 
-/* line 127, ../sass/_theme-styles.scss */
+/* line 132, ../sass/_theme-styles.scss */
 .about-us-page textarea {
   height: 212px;
 }
 @media (min-width: 1px) and (max-width: 760px) {
-  /* line 130, ../sass/_theme-styles.scss */
+  /* line 135, ../sass/_theme-styles.scss */
   .about-us-page .bg-gray-blue {
     padding-top: 0;
     padding-bottom: 0;
   }
 }
 
-/* line 141, ../sass/_theme-styles.scss */
+/* line 146, ../sass/_theme-styles.scss */
 .contact-map {
   padding-bottom: 30px;
 }
-/* line 143, ../sass/_theme-styles.scss */
+/* line 148, ../sass/_theme-styles.scss */
 .contact-map .title-txt {
   padding-top: 30px;
 }
-/* line 145, ../sass/_theme-styles.scss */
+/* line 150, ../sass/_theme-styles.scss */
 .contact-map .title-txt > span {
   font-size: 16px;
   text-transform: none;
@@ -929,11 +935,11 @@ p {
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-  /* line 156, ../sass/_theme-styles.scss */
+  /* line 161, ../sass/_theme-styles.scss */
   .banner-page .respon-img {
     height: 300px;
   }
-  /* line 158, ../sass/_theme-styles.scss */
+  /* line 163, ../sass/_theme-styles.scss */
   .banner-page .respon-img img {
     height: 100%;
   }
