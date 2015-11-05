@@ -37,6 +37,11 @@
 	@include media($bs-xs...) {
 		padding: $pd20 0 0;
 	}
+	.block-toggle {
+		.btn-blog {
+			margin-bottom: 1.5rem;
+		}
+	}
 	.article-blog {
 		width: 80%;
 		border-bottom: solid 1px $gray12;

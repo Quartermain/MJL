@@ -1,4 +1,4 @@
-$(window).ready(function(){
+$(document).ready(function(){
 
 	// Resize window
 	
@@ -65,14 +65,16 @@ $(window).ready(function(){
 		var sumHeight = heightHotLine + heightLogo;
 		$(".sumHeightMobile").css("margin-top",sumHeight);
 	}
-
-	if ($(window).width() < 768) {
-    	heightHeaderMobile();
-	};
-
-	$(window).resize(function(){
-	    heightHeaderMobile();
+	
+	$(window).resize(function() {
+	  if ($(window).width() < 768) {
+	    	heightHeaderMobile();
+		} else if ($(window).width() >= 768){
+			$(".sumHeightMobile").removeAttr("style");
+		};
 	});
+	
+	
 
 	// Colspan mobile
 	// 
