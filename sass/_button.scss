@@ -19,12 +19,14 @@
 
 .read-more,
 .read-less {
-	display: block;
+	display: inline !important;
 	margin-top: 1rem;
 	.more-link,
 	.less-link {
 		@extend .btn;
 		@extend .btn-outline;
 		margin-right: 0.5rem;
+		display: none;
 	}
+
 }

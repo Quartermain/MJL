@@ -124,16 +124,14 @@ $(document).ready(function(){
     	if($(this).hasClass('more')){
     		$(this).parent('.button-read').siblings('.expander').find('.more-link').click();
     		$(this).text("Read less");
-    		if ($(window).width() >= 1900) {
-    			$(this).parents().find(".block-toggle").css("background-size","60% 100%");
-    		};
+			$(this).parents().find(".block-toggle").css("background-size","60% 100%");
+    		
     	}
     	else{
     		$(this).parent('.button-read').siblings('.expander').find('.less-link').click();
     		$(this).text("Read more");
-    		if ($(window).width() >= 1900) {
-    			$(this).parents().find(".block-toggle").css("background-size","auto 100%");
-    		};
+			$(this).parents().find(".block-toggle").css("background-size","auto 100%");
+    		
     	}
     	$(this).toggleClass('more');
 	 	event.preventDefault();

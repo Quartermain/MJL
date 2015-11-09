@@ -232,7 +232,7 @@ or wrap each row of columns in a @include row */
 /* line 20, ../sass/_button.scss */
 .read-more,
 .read-less {
-  display: block;
+  display: inline !important;
   margin-top: 1rem;
 }
 /* line 24, ../sass/_button.scss */
@@ -241,6 +241,7 @@ or wrap each row of columns in a @include row */
 .read-less .more-link,
 .read-less .less-link {
   margin-right: 0.5rem;
+  display: none;
 }
 
 @font-face {
