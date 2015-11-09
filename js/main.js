@@ -11,13 +11,16 @@ $(document).ready(function(){
 	});
 
 	$(function(){
-		$(".humberger").click(function(){
-			var hHeader = $(".header").outerHeight();
-			var wHumberger = $(".humberger").outerWidth();
+		$(".right-header").hover(function(){
+			
+			$(this).toggleClass("active");
 			$(".menu-drop").toggleClass("dis-none");
 			$(".menu-drop").toggleClass("animated fadeIn");
 			$(".humberger .fa").toggleClass("fa-chevron-down").toggleClass("fa-bars");
-			$(this).toggleClass("active");
+			
+			var hHeader = $(".header").outerHeight();
+			
+			var wHumberger = 181;//$(".humberger").outerWidth(); fixed width
 			$(".menu-drop").css("top",hHeader);
 			$(".menu-drop").css("width",wHumberger);
 
@@ -25,9 +28,9 @@ $(document).ready(function(){
 
 			$(".menu-child2").css("right",wHumberger);
 
-			$(".menu-child .show-child").click(function(){
-				$(".menu-child2").not($(this).siblings(".menu-child2")).addClass("dis-none ");
-				$(this).siblings(".menu-child2").toggleClass("dis-none animated fadeIn");
+			$(".menu-child li").hover(function(){
+				//$(".menu-child2").not($(this).find('a.show-child').siblings(".menu-child2")).addClass("dis-none ");
+				$(this).find('a.show-child').siblings(".menu-child2").toggleClass("dis-none animated fadeIn");
 			});
 		});
 
