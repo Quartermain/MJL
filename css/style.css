@@ -232,8 +232,6 @@ or wrap each row of columns in a @include row */
 /* line 20, ../sass/_button.scss */
 .read-more,
 .read-less {
-  display: block;
-  margin-top: 1rem;
 }
 /* line 24, ../sass/_button.scss */
 .read-more .more-link,
@@ -1883,4 +1881,14 @@ select {
     vertical-align: middle;
     margin-right: 10px;
   }
+}
+
+/* Custom */
+
+.read-less .less-link,  .read-more .more-link{
+  display: none;
+}
+
+.read-more, .read-less {
+    display: inline !impotant;
 }

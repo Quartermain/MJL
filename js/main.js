@@ -88,33 +88,50 @@ $(document).ready(function(){
     // 
     // 
     function readLess(){
-    	$(".expander").each(function(){
-
+    	var enquire_link = [];
+    	$(".expander").each(function(evt){
+    		//that = $(this);
+    		//enquire_link[evt] = $(this).find('.enquire-link').clone();
 			$(this).expander({
 				slicePoint: 500,
-				afterExpand: function() {
-					$(this).find('.read-less .less-link').after($(this).find('.enquire-link'));
-				},
-				afterCollapse: function() {
-					console.log($(this).find('.read-more .more-link'));
-					$(this).find('.read-more .more-link').after($(this).find('.enquire-link'));
-				},
-				userCollapsePrefix: '',
-				expandPrefix:'',
+				//afterExpand: function() {
+					//$(this).find('.read-less .less-link').after(enquire_link[evt]);
+				//},
+				//afterCollapse: function() {
+					//console.log(that.find('.read-more .more-link'));
+					//that.find('.read-more .more-link').after(enquire_link[evt]);
+				//},
+				//userCollapsePrefix: '',
+				//expandPrefix:'',
 				expandEffect: 'slideDown',
 				//expandSpeed: 800,
 				collapseEffect: 'slideUp',
 				//collapseSpeed: 800,
 			});
 
-			$(this).find('.read-more .more-link').after($(this).find('.enquire-link'));
-			$(this).find('.read-more').before($('<span class="three-dot">...</div>'));
+			//$(this).find('.read-more .more-link').after(enquire_link[evt]);
+			//$(this).find('.read-more').before($('<span class="three-dot">...</div>'));
     	});
     }
-    readLess();
 
+    readLess();
     // end
 
+
+    // Read more less function
+    $('.c-read-more').click(function(event){
+    	
+    	if($(this).hasClass('more')){
+    		$(this).parent('.button-read').siblings('.expander').find('.more-link').click();
+    		$(this).text("Read less")
+    	}
+    	else{
+    		$(this).parent('.button-read').siblings('.expander').find('.less-link').click();
+    		$(this).text("Read more")
+    	}
+    	$(this).toggleClass('more');
+	 	event.preventDefault();
+    });
 });
 
 
