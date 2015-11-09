@@ -1,9 +1,6 @@
 .header {
   background: $c-base;
 }
-.block-toggle {
-	min-height: 400px;
-}
 
 .block-header {
 	position: fixed;
@@ -65,10 +62,7 @@
 	text-decoration: none;
 	font-weight: $f-bold;
 	float: right;
-	padding-top: 2rem;
-	padding-bottom: 3rem;
-	margin-left: $pd20;
-	margin-right: percentage(37/205);
+	padding: 2rem percentage(37/205) 3rem $pd20;
 	width: 5rem;
 	@include media($bs-xs...) {
 		background: $gray-light;
@@ -177,6 +171,20 @@
 			text-align: center;
 		}
 		.block-element {
+			cursor: pointer;
+			&:hover {
+				.house-element {
+					border-color: $c-hover-txt;
+					color: $c-hover-txt;
+					transform: scale(1.1);
+					i {
+						
+					}
+				}
+				.txt-title {
+					color: $c-hover-txt;
+				}
+			}
 			+ .block-element {
 				border-left: solid 1px $drakest-gray;
 			}
@@ -200,6 +208,7 @@
 			}
 		}
 		.house-element {
+			transition: all .2s ease-in-out;
 			width: 70%;
 			border-bottom: solid 1px $gray2;
 			padding-bottom: 1.5rem;

@@ -20,7 +20,7 @@ $(document).ready(function(){
 			
 			var hHeader = $(".header").outerHeight();
 			
-			var wHumberger = 181;//$(".humberger").outerWidth(); fixed width
+			var wHumberger = $(".humberger").outerWidth();
 			$(".menu-drop").css("top",hHeader);
 			$(".menu-drop").css("width",wHumberger);
 
