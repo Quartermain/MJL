@@ -68,6 +68,8 @@ $(document).ready(function(){
 		var sumHeight = heightHotLine + heightLogo;
 		$(".sumHeightMobile").css("margin-top",sumHeight);
 	}
+
+	heightHeaderMobile();
 	
 	$(window).resize(function() {
 	  if ($(window).width() < 768) {
