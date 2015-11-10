@@ -78,6 +78,10 @@ $(document).ready(function(){
 			$(".sumHeightMobile").removeAttr("style");
 		};
 	});
+
+	if ($(window).width() >= 768){
+		$(".sumHeightMobile").removeAttr("style");
+	};
 	
 	
 
