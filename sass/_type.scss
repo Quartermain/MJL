@@ -4,18 +4,38 @@ h1,h2,h3,h4,h5,h6 {
 }
 h1, .h1 { 
   font-size: $font-size-h1; 
-  text-transform: uppercase; 
+  text-transform: uppercase;
+  @include media($bs-xs...) {
+  	font-size: 2rem;
+  }
   
 }
-h2, .h2 { font-size: $font-size-h2; 
+h2, .h2 { font-size: $font-size-h2;
+	@include media($bs-xs...) {
+  	font-size: 1.5rem;
+  }
   
 }
 h3, .h3 { font-size: $font-size-h3;
+	@include media($bs-xs...) {
+  	font-size: 1rem;
+  }
  
 }
-h4, .h4 { font-size: $font-size-h4; 
+h4, .h4 { font-size: $font-size-h4;
+	@include media($bs-xs...) {
+  	font-size: 0.5rem;
+  }
   
 }
 h5, .h5 { font-size: $font-size-h5;
+	@include media($bs-xs...) {
+  	font-size: 0.5rem;
+  }
 }
-h6, .h6 { font-size: $font-size-h6; }
+h6, .h6 { 
+	font-size: $font-size-h6; 
+	@include media($bs-xs...) {
+  	font-size: 0.5rem;
+  }
+}

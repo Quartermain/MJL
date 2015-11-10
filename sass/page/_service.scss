@@ -67,6 +67,11 @@
 	padding: 1rem 0;
 	.btn {
 		margin-right: 1rem;
+		@include media($bs-xs...) {
+			+ .btn {
+				margin-top: 1rem;
+			}
+		}
 	}
 }
 

@@ -145,6 +145,17 @@ $(document).ready(function(){
     	$(this).toggleClass('more');
 	 	event.preventDefault();
     });
+
+    // remove parallax on mobile
+    // 
+    
+    if($(window).width() < 768) {
+    	$(".parallax-content img").removeAttr("style");
+    	$(".parallax-content img").removeAttr("data-parallax");
+    	$(".parallax-content img").attr("src","images/parallax-none.jpg");
+    } else {
+    	
+    };
 });
 
 

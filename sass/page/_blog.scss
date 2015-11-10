@@ -3,6 +3,9 @@
 	@include media($bs-xs...) {
 		padding-left: 0;
 		padding-right: 0;
+		.blog-element-faq {
+			margin-bottom: $mg30;
+		}
 	}
 }
 
@@ -17,6 +20,7 @@
 	@include media($bs-xs...) {
 		padding: $pd20;
 		margin-bottom: 0;
+
 	}
 	.btn-blog {
 		position: absolute;
