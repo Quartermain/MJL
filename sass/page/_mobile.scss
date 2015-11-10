@@ -2,7 +2,7 @@
 .header-mobile {
 	color: $white;
 	float: left;
-	padding-top: 15px;
+	padding-top: 5px;
 	padding-left: 20px;
 	.hotline {
 		font-weight: $f-bold;
@@ -37,6 +37,13 @@
 }
 
 @include media($bs-xs...) {
+
+	.service-page {
+		.block-toggle .dis-block {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
 
 	.banner-page {
 		overflow: hidden;
@@ -107,8 +114,8 @@
 			padding: 20px;
 			display: none;
 			background: $white;
-			margin-left: -$mg20;
-			margin-right: -$mg20;
+			margin-left: -1.3rem;
+			margin-right: -1.3rem;
 		}
 
 		.dis-block {
