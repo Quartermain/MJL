@@ -126,6 +126,34 @@ $(document).ready(function(){
     readLess();
     // end
 
+    function readLessServices(){
+    	var enquire_link = [];
+    	$(".expander-services").each(function(evt){
+    		//that = $(this);
+    		//enquire_link[evt] = $(this).find('.enquire-link').clone();
+			$(this).expander({
+				slicePoint: 500,
+				//afterExpand: function() {
+					//$(this).find('.read-less .less-link').after(enquire_link[evt]);
+				//},
+				//afterCollapse: function() {
+					//console.log(that.find('.read-more .more-link'));
+					//that.find('.read-more .more-link').after(enquire_link[evt]);
+				//},
+				//userCollapsePrefix: '',
+				//expandPrefix:'',
+				expandEffect: 'slideDown',
+				//expandSpeed: 800,
+				collapseEffect: 'slideUp',
+				//collapseSpeed: 800,
+			});
+
+			//$(this).find('.read-more .more-link').after(enquire_link[evt]);
+			//$(this).find('.read-more').before($('<span class="three-dot">...</div>'));
+    	});
+    }
+    readLessServices();
+    readLess();
 
     // Read more less function
     $('.c-read-more').click(function(event){

@@ -204,12 +204,33 @@ or wrap each row of columns in a @include row */
 .read-less .more-link,
 .read-less .less-link {
   padding: 0.5rem 1.5rem;
-  display: inline-block;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
   text-decoration: none;
   color: #070707;
+  line-height: 50px;
+}
+
+
+.read-more .more-link
+ {
+  display: block;
+  width: 78px;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #070707;
+  line-height: 16px;
+  margin-top: 20px;
+}
+.container-service  .read-more .more-link,
+.container-service  .read-more .less-link,
+.container-service  .read-less .more-link,
+.container-service  .read-less .less-link {
+  display: inline-block;
 }
 
 /* line 11, ../sass/_button.scss */
@@ -230,16 +251,16 @@ or wrap each row of columns in a @include row */
 }
 
 /* line 20, ../sass/_button.scss */
-.read-more,
-.read-less {
+.container-service .read-more,
+.container-service .read-less {
   display: inline !important;
   margin-top: 1rem;
 }
 /* line 24, ../sass/_button.scss */
-.read-more .more-link,
-.read-more .less-link,
-.read-less .more-link,
-.read-less .less-link {
+.container-service .read-more .more-link,
+.container-service .read-more .less-link,
+.container-service .read-less .more-link,
+.container-service .read-less .less-link {
   margin-right: 0.5rem;
   display: none;
 }
@@ -1198,12 +1219,12 @@ select {
 /* line 176, ../sass/page/_homepage.scss */
 .home-block .block-house .block-element:hover .house-element {
   border-color: #cfcdbe;
-  color: #cfcdbe;
+  color: gray;
   transform: scale(1.1);
 }
 /* line 184, ../sass/page/_homepage.scss */
 .home-block .block-house .block-element:hover .txt-title {
-  color: #cfcdbe;
+  color: gray;
 }
 /* line 188, ../sass/page/_homepage.scss */
 .home-block .block-house .block-element + .block-element {
