@@ -167,7 +167,7 @@ $(document).ready(function(){
     	else{
     		$(this).parent('.button-read').siblings('.expander').find('.less-link').click();
     		$(this).text("Read more");
-			$(this).parents().find(".block-toggle").css("background-size","auto 100%");
+			$(this).parents().find(".block-toggle").css("background-size","60% 100%");
     		
     	}
     	$(this).toggleClass('more');
