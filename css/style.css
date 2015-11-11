@@ -1717,7 +1717,7 @@ select {
 /* line 79, ../sass/page/_service.scss */
 .block-service1 {
   background: #fff url("../images/bg-service1.png") no-repeat right center;
-  background-size: 60% 100%;
+  background-size: auto 100%;
   padding-bottom: 1rem;
   position: relative;
 }
@@ -2019,10 +2019,4 @@ select {
     vertical-align: middle;
     margin-right: 10px;
   }
-}
-
-
-/* */
-.content-service.expander{
-  min-height: 406px;
 }
