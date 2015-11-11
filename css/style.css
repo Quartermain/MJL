@@ -265,11 +265,15 @@ or wrap each row of columns in a @include row */
   display: inline-block;
 }
 
-/* line 56, ../sass/_button.scss */
+/* line 57, ../sass/_button.scss */
 .service-page .read-more .more-link,
 .service-page .read-more .less-link,
 .service-page .read-less .more-link,
-.service-page .read-less .less-link {
+.service-page .read-less .less-link,
+.blog-page .read-more .more-link,
+.blog-page .read-more .less-link,
+.blog-page .read-less .more-link,
+.blog-page .read-less .less-link {
   display: none;
 }
 
