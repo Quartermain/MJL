@@ -161,12 +161,18 @@ $(document).ready(function(){
     	if($(this).hasClass('more')){
     		$(this).parent('.button-read').siblings('.expander').find('.more-link').click();
     		$(this).text("Read less");
-			$(this).parents().find(".block-toggle").css("background-size","60% 100%");
+
+    		
+			if ($(window).width() >= 1600){
+				$(this).parents(".block-toggle").css("background-position-x","180%");
+			}
+			else
+				$(this).parents(".block-toggle").css("background-position-x","130%");
     	}
     	else{
     		$(this).parent('.button-read').siblings('.expander').find('.less-link').click();
     		$(this).text("Read more");
-			$(this).parents().find(".block-toggle").css("background-size","auto 100%");
+    		$(this).parents(".block-toggle").css("background-position-x","100%");
     		
     	}
     	$(this).toggleClass('more');
