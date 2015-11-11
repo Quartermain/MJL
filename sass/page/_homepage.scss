@@ -464,6 +464,26 @@
 	text-align: center;
 }
 
+.bgparallax {
+	background: url("../images/parallax.jpg");
+}
+
+.parallax {
+	background-position-x: 50% !important;
+	background-position-y: 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 400px;
+	position: relative;
+	@include media($bs-xs...) {
+		min-height: 300px;
+		background-attachment: local;
+	}
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
