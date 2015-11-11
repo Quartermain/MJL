@@ -30,7 +30,8 @@
 
 }
 
-.read-more .more-link{
+.read-more .more-link,
+.read-less .less-link{
   display: block;
   width: 78px;
   padding: 0.5rem 1.5rem;
@@ -49,8 +50,30 @@
 	display: inline-block;
  }
 
- .service-page,
- .blog-page {
+.service-page,
+.blog-page,
+.expander {
+	.read-more,
+	.read-less {
+		.more-link,
+		.less-link {
+			display: none;
+		}
+	}
+}
+
+.dis-block, {
+	.read-more,
+	.read-less {
+		.more-link,
+		.less-link {
+			display: block;
+		}
+	}
+}
+
+
+.expander {
 	.read-more,
 	.read-less {
 		.more-link,

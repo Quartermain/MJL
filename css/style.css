@@ -244,7 +244,8 @@ or wrap each row of columns in a @include row */
 }
 
 /* line 33, ../sass/_button.scss */
-.read-more .more-link {
+.read-more .more-link,
+.read-less .less-link {
   display: block;
   width: 78px;
   padding: 0.5rem 1.5rem;
@@ -257,7 +258,7 @@ or wrap each row of columns in a @include row */
   margin-top: 20px;
 }
 
-/* line 45, ../sass/_button.scss */
+/* line 46, ../sass/_button.scss */
 .container-service .read-more .more-link,
 .container-service .read-more .less-link,
 .container-service .read-less .more-link,
@@ -265,7 +266,7 @@ or wrap each row of columns in a @include row */
   display: inline-block;
 }
 
-/* line 56, ../sass/_button.scss */
+/* line 58, ../sass/_button.scss */
 .service-page .read-more .more-link,
 .service-page .read-more .less-link,
 .service-page .read-less .more-link,
@@ -273,7 +274,27 @@ or wrap each row of columns in a @include row */
 .blog-page .read-more .more-link,
 .blog-page .read-more .less-link,
 .blog-page .read-less .more-link,
-.blog-page .read-less .less-link {
+.blog-page .read-less .less-link,
+.expander .read-more .more-link,
+.expander .read-more .less-link,
+.expander .read-less .more-link,
+.expander .read-less .less-link {
+  display: none;
+}
+
+/* line 68, ../sass/_button.scss */
+.dis-block .read-more .more-link,
+.dis-block .read-more .less-link,
+.dis-block .read-less .more-link,
+.dis-block .read-less .less-link {
+  display: block;
+}
+
+/* line 79, ../sass/_button.scss */
+.expander .read-more .more-link,
+.expander .read-more .less-link,
+.expander .read-less .more-link,
+.expander .read-less .less-link {
   display: none;
 }
 
