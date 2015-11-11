@@ -139,4 +139,14 @@
 			margin-right: 10px;
 		}
 	}
+	.service-page {
+		.read-more,
+		.read-less {
+			.more-link,
+			.less-link {
+				display: none;
+			}
+		}
+	}
+
 }

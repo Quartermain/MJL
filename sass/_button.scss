@@ -19,14 +19,43 @@
 
 .read-more,
 .read-less {
-	display: inline !important;
+	display: inline;
 	margin-top: 1rem;
 	.more-link,
 	.less-link {
 		@extend .btn;
 		@extend .btn-outline;
 		margin-right: 0.5rem;
-		display: none;
 	}
 
+}
+
+.read-more .more-link
+ {
+  display: block;
+  width: 78px;
+  padding: 0.5rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #070707;
+  line-height: 16px;
+  margin-top: 20px;
+}
+.container-service  .read-more .more-link,
+.container-service  .read-more .less-link,
+.container-service  .read-less .more-link,
+.container-service  .read-less .less-link {
+  display: inline-block;
+ }
+
+ .service-page {
+	.read-more,
+	.read-less {
+		.more-link,
+		.less-link {
+			display: none;
+		}
+	}
 }
