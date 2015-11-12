@@ -42,8 +42,10 @@
 		padding: $pd20 0 0;
 	}
 	.block-toggle {
-		.btn-blog {
-			margin-bottom: 1.5rem;
+		.conten-toggle {
+			> .btn-blog {
+				margin-bottom: 1.5rem;
+			}
 		}
 	}
 	.article-blog {

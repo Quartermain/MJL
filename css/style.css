@@ -1916,11 +1916,11 @@ select {
   }
 }
 
-/* line 45, ../sass/page/_blog.scss */
-.content-blog .block-toggle .btn-blog {
+/* line 46, ../sass/page/_blog.scss */
+.content-blog .block-toggle .conten-toggle > .btn-blog {
   margin-bottom: 1.5rem;
 }
-/* line 49, ../sass/page/_blog.scss */
+/* line 51, ../sass/page/_blog.scss */
 .content-blog .article-blog {
   width: 80%;
   border-bottom: solid 1px #585858;
@@ -1928,19 +1928,19 @@ select {
   margin-bottom: 30px;
 }
 @media (min-width: 1px) and (max-width: 760px) {
-  /* line 49, ../sass/page/_blog.scss */
+  /* line 51, ../sass/page/_blog.scss */
   .content-blog .article-blog {
     width: 100%;
   }
 }
 
-/* line 58, ../sass/page/_blog.scss */
+/* line 60, ../sass/page/_blog.scss */
 .content-blog .article-blog .header-title .title-article {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 26px;
 }
-/* line 63, ../sass/page/_blog.scss */
+/* line 65, ../sass/page/_blog.scss */
 .content-blog .article-blog .header-title .date-time {
   font-size: 14px;
   color: #989898;
@@ -2096,5 +2096,13 @@ select {
   .service-page .read-less .more-link,
   .service-page .read-less .less-link {
     display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* line 156, ../sass/page/_mobile.scss */
+  .block-toggle,
+  .block-service1,
+  .block-service2 {
+    background-size: 60% 100%;
   }
 }

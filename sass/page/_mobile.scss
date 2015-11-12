@@ -150,3 +150,12 @@
 	}
 
 }
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.block-toggle,
+	.block-service1,
+	.block-service2 {
+		background-size: 60% 100%;
+	}
+}

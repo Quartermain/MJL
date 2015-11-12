@@ -191,6 +191,16 @@ $(document).ready(function(){
     } else {
     	
     };
+
+    // height block elment faq
+    // 
+    // var heightSameBlock = $(".block-same-height").height();
+    // var heightButtonFaq = $(".blog-element-faq .btn-blog").height();
+    // var heightElementFaq = heightSameBlock - heightButtonFaq;
+
+    // $(".article-blog .blog-element-faq").css("height",heightElementFaq);
+    // $(".article-blog .blog-element-faq").css("overflow","hidden");
+    
 });
 
 
