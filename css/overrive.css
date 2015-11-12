@@ -2,6 +2,9 @@
 	.container-service .block-toggle {
 	    min-height: 490px;
 	}
+	.container-service .block-toggle .expander {
+	    min-height: 284px;
+	}
 }
 
 @media (min-width: 1589px) {

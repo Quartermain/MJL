@@ -165,15 +165,17 @@ $(document).ready(function(){
     		
 			if ($(window).width() >= 1600){
 				$(this).parents(".block-toggle").css("background-position-x","180%");
+				$(this).parents(".block-service1").css("background-position-x","180%");
 			}
 			else
 				$(this).parents(".block-toggle").css("background-position-x","130%");
+				$(this).parents(".block-service1").css("background-position-x","130%");
     	}
     	else{
     		$(this).parent('.button-read').siblings('.expander').find('.less-link').click();
     		$(this).text("Read more");
     		$(this).parents(".block-toggle").css("background-position-x","100%");
-    		
+    		$(this).parents(".block-service1").css("background-position-x","100%");
     	}
     	$(this).toggleClass('more');
 	 	event.preventDefault();
